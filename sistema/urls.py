@@ -21,6 +21,6 @@ from django.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-#Con esto accedemos a urls de la app libreria
+#Con esto definimos el acceso a las urls de la app libreria
     path('', include('libreria.urls')),
 ]
