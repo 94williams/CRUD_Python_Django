@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# Para que podamos incluir las Urls de la app de libreria tenemos que usar include
+from django.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+#Con esto accedemos a urls de la app libreria
+    path('', include('libreria.urls')),
 ]
