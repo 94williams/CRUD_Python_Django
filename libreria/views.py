@@ -8,4 +8,5 @@ def inicio(request):
     return HttpResponse("<h1>Bienvenido a la Liberia</h1>")
 #Creamos la función que busca el archivo nosotros .html
 def nosotros(request):
-    return render(request, 'paginas/nosotros.html')
+    return render(request, 'templates/paginas/nosotros.html')
+# Debemos definir la ruta correcta donde se encuentra nuestro html
